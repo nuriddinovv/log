@@ -11,7 +11,7 @@ export default function LoginPage() {
     try {
       const response = await fetch(API, {
         method: "POST",
-
+        mode: "no-cors",
         body: JSON.stringify({
           CompanyDB: "MEGA_TEST2",
           Password: "1234",
